@@ -26,6 +26,7 @@ class Student:
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+<<<<<<< HEAD
         return self.__dict__#!/usr/bin/python3
 """Defines a class Student."""
 
@@ -54,4 +55,6 @@ class Student:
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+=======
+>>>>>>> 3fe9faef2322614ca0de0aeb4f5d6c9e5665a9f6
         return self.__dict__
